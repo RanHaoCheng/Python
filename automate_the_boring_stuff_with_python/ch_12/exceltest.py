@@ -3,10 +3,11 @@
 
 import openpyxl
 
-wb = openpyxl.load_workbook('RDPIO301XX1421-ELE-V1.0_20180202.xlsx')
-print(wb.get_sheet_names())
+wb = openpyxl.load_workbook('RDPIO301XX1421-ELE-V1.0_20180208_Jessie.xlsx')
+sheetList = wb.get_sheet_names()
+print(sheetList)
 
-sheet = wb.get_sheet_by_name('Sheet1')
+sheet = wb.get_sheet_by_name(sheetList[0])
 print(sheet)
 print(type(sheet))
 
@@ -26,8 +27,8 @@ print(sheet['C7'].value)
 print(sheet.cell(row=7,column=2))
 print(sheet.cell(row=7,column=2).value)
 
-for i in range(1,20):
-    print(i , sheet.cell(row=i , column=1).value)
+#for i in range(1,20):
+#    print(i , sheet.cell(row=i , column=1).value)
 
 print("Sheet max row : " + str(sheet.max_row))
 print("Sheet max column : " + str(sheet.max_column))
