@@ -23,7 +23,7 @@ def saveResultToExcel(newList , oriList):
                 if(data in oriList[j].values()):
                     isSameNumber = True
 
-                    
+
 
 
                     print('Diff datas')
@@ -36,7 +36,7 @@ def saveResultToExcel(newList , oriList):
                     print('SPEC\t\t'+oriList[j]['SPEC']+'\t\t'+newList[i]['SPEC'])
                     print('')
             if isSameNumber == False:
-                print('New Datas')
+                print('Datas that new BOM have')
                 print('NAME\t\t'+newList[i]['NAME'])
                 print('NUMBER\t\t'+newList[i]['NUMBER'])
                 print('PLACEMENT\t\t'+newList[i]['PLACEMENT'])
@@ -61,7 +61,7 @@ def saveResultToExcel(newList , oriList):
                     print('SPEC\t\t'+oriList[j]['SPEC']+'\t\t'+newList[i]['SPEC'])
                     print('')
             if isSameNumber == False:
-                print('New Datas')
+                print('Datas that original BOM have')
                 print('NAME\t\t'+oriList[i]['NAME'])
                 print('NUMBER\t\t'+oriList[i]['NUMBER'])
                 print('PLACEMENT\t\t'+oriList[i]['PLACEMENT'])
