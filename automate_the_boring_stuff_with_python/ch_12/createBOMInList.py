@@ -27,6 +27,9 @@ def createBOMlist(NameOfBOM , NewFileName):
         if type(componentNumber) == type(None):
             break
 
+        if type(isReplacement) == type(None):
+            isReplacement = u'*'
+
         # Placement and usage may be combined to one cell
         # So it is possible be read as None
         while type(placeMent) == type(None):
