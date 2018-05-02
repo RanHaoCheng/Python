@@ -18,4 +18,8 @@ print(wb.get_sheet_names())
 
 print(wb.get_sheet_by_name('1st sheet'))
 
+test = {'A':1 , 'B':2 , 'C':3}
+ws = wb.get_sheet_by_name('1st sheet')
+ws['A1'] = test
+
 wb.save('example.xlsx')

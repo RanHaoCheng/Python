@@ -23,24 +23,21 @@ def saveResultToExcel(newList , oriList):
                 if(data in oriList[j].values()):
                     isSameNumber = True
 
-
-
-
                     print('Diff datas')
                     print('\t\tOriginal Data\t\t\tNew Data')
                     print('NAME\t\t'+oriList[j]['NAME']+'\t\t'+newList[i]['NAME'])
                     print('NUMBER\t\t'+oriList[j]['NUMBER']+'\t\t'+newList[i]['NUMBER'])
-                    print('PLACEMENT\t\t'+oriList[j]['PLACEMENT']+'\t\t'+newList[i]['PLACEMENT'])
-                    print('REPLACEMENT\t\t'+oriList[j]['REPLACEMENT']+'\t\t'+newList[i]['REPLACEMENT'])
-                    print('USAGE\t\t'+str(oriList[j]['USAGE'])+'\t\t'+str(newList[i]['USAGE']))
+                    print('PLACEMENT\t'+oriList[j]['PLACEMENT']+'\t\t\t\t'+newList[i]['PLACEMENT'])
+                    print('REPLACEMENT\t'+oriList[j]['REPLACEMENT']+'\t\t\t\t'+newList[i]['REPLACEMENT'])
+                    print('USAGE\t\t'+str(oriList[j]['USAGE'])+'\t\t\t\t'+str(newList[i]['USAGE']))
                     print('SPEC\t\t'+oriList[j]['SPEC']+'\t\t'+newList[i]['SPEC'])
                     print('')
             if isSameNumber == False:
                 print('Datas that new BOM have')
                 print('NAME\t\t'+newList[i]['NAME'])
                 print('NUMBER\t\t'+newList[i]['NUMBER'])
-                print('PLACEMENT\t\t'+newList[i]['PLACEMENT'])
-                print('REPLACEMENT\t\t'+newList[i]['REPLACEMENT'])
+                print('PLACEMENT\t'+newList[i]['PLACEMENT'])
+                print('REPLACEMENT\t'+newList[i]['REPLACEMENT'])
                 print('USAGE\t\t'+str(newList[i]['USAGE']))
                 print('SPEC\t\t'+newList[i]['SPEC'])
                 print('')
@@ -55,17 +52,17 @@ def saveResultToExcel(newList , oriList):
                     print('\t\tOriginal Data\t\t\tNew Data')
                     print('NAME\t\t'+oriList[j]['NAME']+'\t\t'+newList[i]['NAME'])
                     print('NUMBER\t\t'+oriList[j]['NUMBER']+'\t\t'+newList[i]['NUMBER'])
-                    print('PLACEMENT\t\t'+oriList[j]['PLACEMENT']+'\t\t'+newList[i]['PLACEMENT'])
-                    print('REPLACEMENT\t\t'+oriList[j]['REPLACEMENT']+'\t\t'+newList[i]['REPLACEMENT'])
-                    print('USAGE\t\t'+str(oriList[j]['USAGE'])+'\t\t'+str(newList[i]['USAGE']))
+                    print('PLACEMENT\t'+oriList[j]['PLACEMENT']+'\t\t\t\t'+newList[i]['PLACEMENT'])
+                    print('REPLACEMENT\t'+oriList[j]['REPLACEMENT']+'\t\t\t\t'+newList[i]['REPLACEMENT'])
+                    print('USAGE\t\t'+str(oriList[j]['USAGE'])+'\t\t\t\t'+str(newList[i]['USAGE']))
                     print('SPEC\t\t'+oriList[j]['SPEC']+'\t\t'+newList[i]['SPEC'])
                     print('')
             if isSameNumber == False:
                 print('Datas that original BOM have')
                 print('NAME\t\t'+oriList[i]['NAME'])
                 print('NUMBER\t\t'+oriList[i]['NUMBER'])
-                print('PLACEMENT\t\t'+oriList[i]['PLACEMENT'])
-                print('REPLACEMENT\t\t'+oriList[i]['REPLACEMENT'])
+                print('PLACEMENT\t'+oriList[i]['PLACEMENT'])
+                print('REPLACEMENT\t'+oriList[i]['REPLACEMENT'])
                 print('USAGE\t\t'+str(oriList[i]['USAGE']))
                 print('SPEC\t\t'+oriList[i]['SPEC'])
                 print('')
